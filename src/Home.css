@@ -1,0 +1,59 @@
+/* home.css */
+
+.home-container {
+    text-align: center;
+    margin-top: 4rem;
+  }
+  
+  .home-title {
+    margin-bottom: rem;
+  }
+  
+  .search-bar {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  /* Home.css */
+
+.home-container {
+    text-align: center;
+  }
+  
+  .search-bar {
+    margin-bottom: 1rem;
+  }
+  
+  /* Home.css */
+
+.home-container {
+    text-align: center;
+  }
+  
+  .search-bar {
+    margin-bottom: 1rem;
+  }
+  
+  .suggestions-section {
+    margin-top: 1rem;
+  }
+  
+  .suggestions-section p {
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: gray;
+  }
+  
+  .suggestion-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  .suggestion-button {
+    text-transform: uppercase;
+    width: calc(25% - 0.5rem); /* Adjust the width for 4 buttons in one line */
+    margin-bottom: 0.5rem; /* Add margin between rows */
+  }
+  

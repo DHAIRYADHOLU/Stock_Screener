@@ -1,0 +1,10 @@
+/* src/BottomNavBar.css */
+
+.bottomNavBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #e0e0e0; /* Grey background color */
+    z-index: 1000; /* Adjust the z-index as needed */
+  }
+  
