@@ -6,8 +6,11 @@ import Home from './Home';
 import Screens from './Screens';
 import Login from './Login';
 import Tools from './Tools';
+import Register from './Register';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'; // Import TrendingUpIcon
 import './App.css';
+
+
 
 // Header component
 const Header = () => {
@@ -15,7 +18,7 @@ const Header = () => {
     <header className="app-header">
       {/* Up Graph Logo */}
      
-      <h1> <TrendingUpIcon fontSize="large" />Stock Screener</h1>
+      <h1> <TrendingUpIcon fontSize="large" style={{color:'green'}} />Stock Screener</h1>
     </header>
   );
 };
@@ -31,10 +34,10 @@ function App() {
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/screens" element={<Screens />} />
-          
           <Route path="/login" element={<Login />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register/>} />
         </Routes>
 
         {/* Bottom Navigation Bar */}

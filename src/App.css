@@ -1,13 +1,14 @@
 
 .app-header {
-  background-color: #365486;
+  background-color: #161616;
   text-align: center;
   padding: 0.10px;
 }
 
 .app-header h1 {
-  color: #fff; /* Set your desired text color */
+  color: #ffffff; /* Set your desired text color */
 }
+
 body{
-  background-color: #E5E1DA;
+  background-color: #e5e5e5;
 }

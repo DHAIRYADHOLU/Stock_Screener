@@ -1,0 +1,29 @@
+/* Register.css */
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .register-form {
+    width: 100%;
+  }
+  
+  .register-input {
+    margin-bottom: 0.5rem !important; /* Use !important to ensure the styles are applied */
+  }
+  
+  .register-button {
+    margin-top: 1rem; /* Adjust margin at the top of the button */
+    
+  }
+  
+  .login-link {
+    text-decoration: none;
+    color: #1976D2; /* You can use the color you prefer for the link */
+  }
+  
+  /* Add additional styling as needed */
+  

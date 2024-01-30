@@ -3,10 +3,11 @@
 .home-container {
     text-align: center;
     margin-top: 4rem;
+
   }
   
   .home-title {
-    margin-bottom: rem;
+    margin-bottom: 1rem;
   }
   
   .search-bar {
@@ -14,25 +15,6 @@
     margin-top: 1rem;
   }
   
-  /* Home.css */
-
-.home-container {
-    text-align: center;
-  }
-  
-  .search-bar {
-    margin-bottom: 1rem;
-  }
-  
-  /* Home.css */
-
-.home-container {
-    text-align: center;
-  }
-  
-  .search-bar {
-    margin-bottom: 1rem;
-  }
   
   .suggestions-section {
     margin-top: 1rem;
@@ -41,7 +23,7 @@
   .suggestions-section p {
     margin-bottom: 0.5rem;
     text-align: left;
-    color: gray;
+    color: grey;
   }
   
   .suggestion-buttons {
@@ -57,3 +39,25 @@
     margin-bottom: 0.5rem; /* Add margin between rows */
   }
   
+  /* Home.css */
+
+.table-container {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.table-container table {
+  width: 100%;
+}
+
+.table-container th,
+.table-container td {
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #f2f2f2;
+}
+
+
+

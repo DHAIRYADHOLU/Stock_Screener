@@ -1,11 +1,15 @@
-// Tools.js
-import React from 'react';
+import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
 
 const Tools = () => {
   return (
     <div>
-      <h2>Tools Component</h2>
-      {/* Add content for the Tools component */}
+      
+
+      <div className='heading'>
+        <h2>Tools Component</h2>
+        {/* Add content for the Tools component */}
+      </div>
     </div>
   );
 };
