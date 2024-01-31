@@ -12,3 +12,22 @@
 body{
   background-color: #e5e5e5;
 }
+
+.marquee-container{
+  background-color: rgba(53, 47, 47, 0.963);
+  height: 30px;
+  padding-top: 10px;
+  font-size: large;
+}
+.marquee-texts{
+  color: #ffffff;
+  margin-left: 10px;
+}
+.marquee-text-up{
+  color: chartreuse;
+  margin-right: 10px;
+}
+.marquee-text-down{
+  color: red;
+  margin-right: 10px;
+}

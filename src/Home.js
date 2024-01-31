@@ -10,7 +10,7 @@ const Home = () => {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`https://cloud.iexapis.com/stable/stock/${searchTerm}/quote?token=pk_e7d1d64953384365928d4875b416f8b1`);
+      const response = await fetch(`https://cloud.iexapis.com/stable/stock/${searchTerm}/quote?token=pk_91968dfd5ac54f69a37d10a0328d8306`);
       const data = await response.json();
       setStockData(data);
     } catch (error) {

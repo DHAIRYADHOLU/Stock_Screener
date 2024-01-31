@@ -29,7 +29,54 @@ function App() {
       <div>
         {/* Header */}
         <Header />
-
+        <div className="marquee-container">
+          <marquee behavior="scroll" direction="left" scrollamount="4">
+            {/* demo */}
+            <span className="marquee-texts">AAPL : </span>
+            <span className="marquee-text-up">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-down">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-up">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-down">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-up">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-down">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-up">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-down">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-up">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-down">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-up">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-down">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-up">134.09</span>
+            <span> | </span>
+            <span className="marquee-texts"> AAPL : </span>
+            <span className="marquee-text-down">134.09</span>
+            
+            {/* demo */}
+          </marquee>
+        </div>
         {/* Your main content goes here */}
         <Routes>
           <Route path="/home" element={<Home />} />
