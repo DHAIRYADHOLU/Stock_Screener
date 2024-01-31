@@ -1,12 +1,12 @@
 // src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import BottomNavBar from './BottomNavBar';
-import Home from './Home';
-import Screens from './Screens';
-import Login from './Login';
-import Tools from './Tools';
-import Register from './Register';
+import BottomNavBar from './components/core/BottomNavBar';
+import Home from './views/home';
+import Screens from './components/core/Screens';
+import Login from './views/login';
+import Tools from './views/tools';
+import Register from './views/register';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp'; // Import TrendingUpIcon
 import './App.css';
 
@@ -17,8 +17,8 @@ const Header = () => {
   return (
     <header className="app-header">
       {/* Up Graph Logo */}
-     
-      <h1> <TrendingUpIcon fontSize="large" style={{color:'green'}} />Stock Screener</h1>
+
+      <h1> <TrendingUpIcon fontSize="large" style={{ color: 'green' }} />Stock Screener</h1>
     </header>
   );
 };
@@ -73,7 +73,7 @@ function App() {
             <span> | </span>
             <span className="marquee-texts"> AAPL : </span>
             <span className="marquee-text-down">134.09</span>
-            
+
             {/* demo */}
           </marquee>
         </div>
@@ -84,7 +84,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register/>} />
+          <Route path="/register" element={<Register />} />
         </Routes>
 
         {/* Bottom Navigation Bar */}

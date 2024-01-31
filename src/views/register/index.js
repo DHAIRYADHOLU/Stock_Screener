@@ -122,7 +122,7 @@ const Register = () => {
             variant="contained"
             color="primary"
             className="register-button"
-            style={{ backgroundColor: '#161616',marginTop:'10px' }}
+            style={{ backgroundColor: '#161616', marginTop: '10px' }}
           >
             Register
           </Button>
