@@ -3,9 +3,7 @@ import {
 	ID_TOKEN,
 	IS_LOGIN,
 	USER_NAME,
-	USER_ROLE,
-	SUB_ROUTE,
-} from "src/common/constants";
+} from "../../common/constants/index.ts";
 
 export const onClearLoginCache = () => {
 	localStorage.removeItem(ACCESS_TOKEN);
@@ -13,6 +11,4 @@ export const onClearLoginCache = () => {
 	localStorage.removeItem(IS_LOGIN);
 
 	localStorage.removeItem(USER_NAME);
-	localStorage.removeItem(USER_ROLE);
-	localStorage.removeItem(SUB_ROUTE);
 };

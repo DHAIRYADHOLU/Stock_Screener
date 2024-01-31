@@ -3,24 +3,41 @@ import React, { useState } from 'react';
 import { Container, TextField, InputAdornment, Button, Table, TableContainer, TableHead, TableBody, TableRow, TableCell, Paper } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import './Home.css'; // Import the CSS file
+import * as API from "../../apis/stocks.js";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [stockData, setStockData] = useState(null);
 
-  const handleSearch = async () => {
+  // const handleSearch = async () => {
+  //   try {
+  //     const response = await fetch(`https://cloud.iexapis.com/stable/stock/${searchTerm}/quote?token=pk_91968dfd5ac54f69a37d10a0328d8306`);
+  //     const data = await response.json();
+  //     setStockData(data);
+  //   } catch (error) {
+  //     console.error('Error fetching stock data:', error);
+  //   }
+  // };
+
+  const handleSearch2 = async (symbol) => {
     try {
-      const response = await fetch(`https://cloud.iexapis.com/stable/stock/${searchTerm}/quote?token=pk_91968dfd5ac54f69a37d10a0328d8306`);
-      const data = await response.json();
-      setStockData(data);
-    } catch (error) {
-      console.error('Error fetching stock data:', error);
+      let searchText = symbol !== "" ? symbol : searchTerm;
+      let data = await API.GET_STOCKS(searchText).then((res) => {
+        const _data = res.data;
+        setStockData(_data);
+      })
+    } catch (err) {
+      console.log("Error", err);
     }
-  };
+  }
+
+  const handleSearch = () => {
+    handleSearch2(searchTerm)
+  }
 
   const handleSuggestionClick = (symbol) => {
     setSearchTerm(symbol);
-    handleSearch();
+    handleSearch2(symbol);
   };
 
   // Dummy stock suggestions for illustration
@@ -89,9 +106,7 @@ const Home = () => {
           onChange={(e) => setSearchTerm(e.target.value)}
           InputProps={{
             startAdornment: (
-              <InputAdornment position="start">
-                
-              </InputAdornment>
+              <InputAdornment position="start" />
             ),
             endAdornment: (
               <InputAdornment position="end">
@@ -99,9 +114,9 @@ const Home = () => {
                   variant="contained"
                   color="primary"
                   onClick={handleSearch}
-                  style={{ backgroundColor: '#161616',}}
+                  style={{ backgroundColor: '#161616', }}
                 >
-                  <SearchIcon color="action" style={{color:'white'}}/>
+                  <SearchIcon color="action" style={{ color: 'white' }} />
                 </Button>
               </InputAdornment>
             ),

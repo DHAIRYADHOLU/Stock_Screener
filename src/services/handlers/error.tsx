@@ -1,7 +1,7 @@
-import { IS_LOGIN } from "src/common/constants";
-import { onClearLoginCache } from "./logout";
-import { ERROR_CODE } from "src/common/constants/responseCode";
-import { ERROR_MSG } from "src/common/constants/responseMsg";
+import { IS_LOGIN } from "../../common/constants/index.ts";
+import { onClearLoginCache } from "./logout.tsx";
+import { ERROR_CODE } from "../../common/constants/responseCode.ts";
+import { ERROR_MSG } from "../../common/constants/responseMsg.ts";
 
 export default function handleError(code) {
 	if (code === ERROR_CODE.UNAUTHORIZED && localStorage.getItem(IS_LOGIN)) {
